@@ -36,9 +36,6 @@ const Ratings = (props) => {
       const meta = await request.getMetaReviews(props.product.id);
       const metasRatings = meta.data.ratings;
       const metaChars = meta.data.characteristics;
-      // console.log('metaChars: ', meta.data.characteristics)
-      // console.log('meta: ', meta);
-      // console.log('metasRatings: ', metasRatings);
       setMetaChar(metaChars)
       setRatings(metasRatings);
     }

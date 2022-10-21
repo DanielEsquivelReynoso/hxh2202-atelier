@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import DistributionItem from "./DistributionItem.jsx";
 import Ratings from "./Ratings.jsx";
 import styled from "styled-components";
-// import averageRating, {oneCount, twoCount, threeCount, fourCount, fiveCount, numberOfReviews} from '../common/oneMeta.js';
+
 
 
 const Distribution = ({ distribution }) => {
-  // console.log('props.distribution inside of Distribution.jsx: ', props.);
 
   const [distributionData, setDistributionData] = useState({ data: [], total: 0});
 

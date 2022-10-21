@@ -136,18 +136,3 @@ const Characteristic = ({characteristic, charsRated}) => {
 };
 
 export default Characteristic;
-
-// .parent {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   grid-template-rows: repeat(5, 1fr);
-//   grid-column-gap: 0px;
-//   grid-row-gap: 0px;
-//   }
-
-//   .div1 { grid-area: 1 / 1 / 2 / 2; }
-//   .div2 { grid-area: 2 / 1 / 4 / 6; }
-//   .div3 { grid-area: 4 / 1 / 5 / 2; }
-//   .div4 { grid-area: 4 / 3 / 5 / 4; }
-//   .div5 { grid-area: 4 / 5 / 5 / 6; }
-// }

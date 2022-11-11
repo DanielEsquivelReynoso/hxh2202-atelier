@@ -1,10 +1,10 @@
 import React from 'react';
 import Star from './Star.jsx';
-import {AiOutlineArrowRight} from 'react-icons/ai';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import styled from 'styled-components';
 import Logo from '../../assets/Logo.png';
-import {useParams, useNavigate} from "react-router-dom";
-import {Link} from 'react-router-dom';
+import { useParams, useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 const ProductContainer = styled.div`
@@ -13,7 +13,7 @@ width: 420px;
 display: flex;
 font-family:sans-serif;
 `
-const productWrapper = styled.div`
+const ProductWrapper = styled.div`
 float: left;
 width: 25%;
 padding: 15px;
@@ -50,10 +50,10 @@ padding-top:5px;
 
 function CataProduct ({selector, card}) {
 	let navigate = useNavigate();
-
+	console.log('card in CataProduct: ', card);
 	return (
 		<ProductContainer onClick = {()=>{selector(card), navigate(`/product/${card.id}`)}}>
-			<productWrapper>
+			<ProductWrapper>
 				<ProductImage src={card.style[0] ? card.style[0].photos[0].url : Logo}/>
 				<ProductCategory>
 					{card.category}
@@ -67,7 +67,7 @@ function CataProduct ({selector, card}) {
 				<div className="rating">
 					<Star />
 				</div>
-			</productWrapper>
+			</ProductWrapper>
 		</ProductContainer>
   )
 

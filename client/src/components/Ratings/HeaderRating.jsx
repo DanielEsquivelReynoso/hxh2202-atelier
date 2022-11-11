@@ -21,7 +21,7 @@ const NumberStyle = styled.div`
   margin-right: 5px;
 `;
 
-var ratingAverage = (distribution) => {
+export const ratingAverage = (distribution) => {
   const data = {};
   let total = 0;
   let weightedSum = 0;
@@ -37,7 +37,7 @@ var ratingAverage = (distribution) => {
   return avgRating;
 }
 
-const HeaderRating = ({ distribution, setStarsIndex }) => {
+export const HeaderRating = ({ distribution, setStarsIndex }) => {
 
   const average = ratingAverage(distribution);
   const averageRounded = Math.round(average * 100) / 100
@@ -52,5 +52,3 @@ const HeaderRating = ({ distribution, setStarsIndex }) => {
     </div>
   )
 }
-
-export default HeaderRating;

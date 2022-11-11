@@ -1,6 +1,6 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductBreakdown from './ProductBreakdown.jsx';
-import HeaderRating from './HeaderRating.jsx';
+import { HeaderRating } from './HeaderRating.jsx';
 import styled from 'styled-components';
 import Distribution from './Distribution.jsx';
 const request = require('../Request.js');

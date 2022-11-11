@@ -1,9 +1,9 @@
 /*
-Hunter-X-Hunter FEC
-Daniel Esquivel-Reynoso, Dora Xia, David Liang, Bogdan Gordin
+Hunter-X-Hunter Front-End Capstone
+Daniel Esquivel-Reynoso, Dora Xia, Bogdan Gordin
 3/29/22
-our Atelier App, will contain all of the componant modules
 */
+
 import React, {Suspense} from 'react';
 import {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
@@ -83,7 +83,6 @@ function App(){
 
   let productId = useParams();
 
-
   return (
     <div>
       <Suspense fallback={<div>Loading...</div>}>
@@ -107,8 +106,6 @@ function App(){
   );
 
 }
-
-
 
 ReactDOM.render(<App />, document.getElementById('atelier'));
 

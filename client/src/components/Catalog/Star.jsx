@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {IoIosStarOutline} from 'react-icons/io';
+import { IoIosStarOutline } from 'react-icons/io';
 
 const Star = (props)=>{
   return (
